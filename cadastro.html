@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/cadastroStyle.css') }}">
+    <title>Modelo MVC | Cadastro</title>
+</head>
+<body>
+
+
+    <!-- <div class="container"> -->
+        <form class="container" action="cadastros" method="POST">
+            <h4>Cadastro | <a href="/lista">Listar Usuários</a></h4></br>
+
+            <label>Nome:
+                <input type="text" id="username" name="username" placeholder="nome..." required> 
+            </label></br>
+
+            <label>Email:
+                <input type="email" id="email" name="email" placeholder="e-mail..." required>
+            </label></br>
+
+            <label>Endereco:
+                <input type="text" id="address" name="address" placeholder="Endereço..." required>
+            </label></br>
+
+                <input type="submit" id="submitButton" name="submitButton" value="Cadastrar">
+        </form>
+        
+    <!-- </div> -->
+    <!-- <h1>Dashboard MVC</h1> 
+    <ul> Use o painel central para:
+        <li><a href="">Criar Registro de Cliente</a></li>
+        <li><a href="">Litar Clientes</a></li>
+        <li><a href=""></a></li>
+    </ul> -->
+</body>
+</html>
